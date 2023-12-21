@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "c45400d5-4f5c-46ca-bc3e-f1045e3c1c0b",
+		"name": "Task 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26708201",
+		"_collection_link": "https://bold-trinity-207194.postman.co/workspace/My-Workspace~36b7cbb9-1c45-4037-82ee-ec480d2654e3/collection/26708201-c45400d5-4f5c-46ca-bc3e-f1045e3c1c0b?action=share&source=collection_link&creator=26708201"
+	},
+	"item": [
+		{
+			"name": "Post Users Document",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"avi\",\r\n    \"age\": 23\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/Postusers",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Postusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users Documents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/Getusers?name=pradum&page=1&limit=4&sortOrder=-1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Getusers"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "pradum"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "4"
+						},
+						{
+							"key": "sortOrder",
+							"value": "-1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
